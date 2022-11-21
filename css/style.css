@@ -10,11 +10,14 @@ body {
   --dominant-color: #fed301;
 }
 
+
+/* header part start */
+
+
 .logo {
   width: 120px;
   height: 100px;
 }
-
 header {
   background-color: rgb(239, 242, 245) !important;
   display: flex;
@@ -47,25 +50,137 @@ header nav .navbar-brand {
 }
 
 header nav div ul li a {
+  text-decoration: none;
+  color: black;
   font-size: 20px !important;
 }
-
-main {
-  width: 90%;
-  margin: 0 auto;
+header nav div ul li a .fa-circle-user {
+  color: #36B2B0;
 }
-.banner {
-  background-image: url(https://i.postimg.cc/zX8rhJ2v/banner.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 815px;
-  position: relative;
+header nav div ul li button {
+  width:121px;
+  height: 45px;
+  background-color: #8B6357;
+  border:0px;
+  border-radius: 30px;
+  transition-duration: 0.6s;
 }
-
+header nav div ul li button:hover{
+  opacity: 0.7;
+  transition-duration: 0.6s;
+}
 .navbar-nav {
   display: flex;
   align-items: center;
 }
+
+
+
+/* header part start */
+
+
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+
+/* baner part srart */
+.banner {
+  background-image: url(https://i.postimg.cc/zX8rhJ2v/banner.webp); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: relative;
+  width: 100%;
+  height: 815px;
+}
+main .banner .on-baner {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+main .banner .on-baner h2 {
+  color: white;
+  font-size: 72px;
+  font-weight: bold;
+}
+main .banner .on-baner p {
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+main .banner .on-baner button{
+  width: 121px;
+  height: 45px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 25px;
+  background-color: #36B2B0;
+  color: white;
+  transition-duration: 0.5s;
+}
+main .banner .on-baner button:hover {
+  background-color: #4f7271;
+  transition-duration: 0.5s;
+}
+/* baner part end */
+
+main h3 {
+  text-align: center;
+  color:#363C45 ;
+  font-weight: bold;
+  margin: 70px;
+}
+
+
+/* servise part start */
+main .servise-part {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+}
+main .servise-part .servise-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+main .servise-part .servise-wrapper  div{
+  text-align: center;
+}
+
+main .servise-part .servise-wrapper  div img {
+  width: 80%;
+}
+
+main .servise-part .servise-wrapper  div h4 {
+  margin: 40px;
+  font-size: 22px;
+  color: #363C45;
+  font-weight: bold;
+}
+main .servise-part .servise-wrapper  div p {
+  font-size: 18px;
+  color: #363C45;
+}
+main .servise-part button {
+  width: 121px;
+  height: 45px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 25px;
+  background-color: #36B2B0;
+  color: white;
+  transition-duration: 0.5s;
+}
+main .servise-part button:hover{
+  opacity: 0.7;
+}
+/* servise part end */
