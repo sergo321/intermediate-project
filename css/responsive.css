@@ -1,0 +1,22 @@
+@media screen and (max-width: 1245px) {
+    header nav .container-fluid a {
+        font-size: 25px;
+}
+
+@media screen and (max-width: 1160px) {
+  header nav .container-fluid a {
+    font-size: 20px;
+  }
+  .logo {
+    width: 80px;
+    height: 70px;
+  }
+  header nav div div ul li a {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo {
+    /* border: solid 1px black; */
+  }
+}
