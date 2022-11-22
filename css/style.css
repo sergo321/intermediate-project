@@ -6,13 +6,10 @@ body {
 
 :root {
   --primery-font: "Spinnaker", sans-serif;
-  --active-color: #3d3d3d;
-  --dominant-color: #fed301;
+  /* test */
 }
 
-
 /* header part start */
-
 
 .logo {
   width: 120px;
@@ -55,17 +52,17 @@ header nav div ul li a {
   font-size: 20px !important;
 }
 header nav div ul li a .fa-circle-user {
-  color: #36B2B0;
+  color: #36b2b0;
 }
 header nav div ul li button {
-  width:121px;
+  width: 121px;
   height: 45px;
-  background-color: #8B6357;
-  border:0px;
+  background-color: #8b6357;
+  border: 0px;
   border-radius: 30px;
   transition-duration: 0.6s;
 }
-header nav div ul li button:hover{
+header nav div ul li button:hover {
   opacity: 0.7;
   transition-duration: 0.6s;
 }
@@ -74,24 +71,19 @@ header nav div ul li button:hover{
   align-items: center;
 }
 
-
-
 /* header part start */
-
-
 
 main {
   width: 90%;
   margin: auto;
 }
 
-
 /* baner part srart */
 .banner {
-  background-image: url(https://i.postimg.cc/zX8rhJ2v/banner.webp); 
+  background-image: url(https://i.postimg.cc/zX8rhJ2v/banner.webp);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 815px;
@@ -113,13 +105,13 @@ main .banner .on-baner p {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-main .banner .on-baner button{
+main .banner .on-baner button {
   width: 121px;
   height: 45px;
   font-size: 15px;
   border: 0px;
   border-radius: 25px;
-  background-color: #36B2B0;
+  background-color: #36b2b0;
   color: white;
   transition-duration: 0.5s;
 }
@@ -131,11 +123,10 @@ main .banner .on-baner button:hover {
 
 main h3 {
   text-align: center;
-  color:#363C45 ;
+  color: #363c45;
   font-weight: bold;
   margin: 70px;
 }
-
 
 /* servise part start */
 main .servise-part {
@@ -152,23 +143,23 @@ main .servise-part .servise-wrapper {
   column-gap: 50px;
   row-gap: 50px;
 }
-main .servise-part .servise-wrapper  div{
+main .servise-part .servise-wrapper div {
   text-align: center;
 }
 
-main .servise-part .servise-wrapper  div img {
+main .servise-part .servise-wrapper div img {
   width: 80%;
 }
 
-main .servise-part .servise-wrapper  div h4 {
+main .servise-part .servise-wrapper div h4 {
   margin: 40px;
   font-size: 22px;
-  color: #363C45;
+  color: #363c45;
   font-weight: bold;
 }
-main .servise-part .servise-wrapper  div p {
+main .servise-part .servise-wrapper div p {
   font-size: 18px;
-  color: #363C45;
+  color: #363c45;
 }
 main .servise-part button {
   width: 121px;
@@ -176,11 +167,11 @@ main .servise-part button {
   font-size: 15px;
   border: 0px;
   border-radius: 25px;
-  background-color: #36B2B0;
+  background-color: #36b2b0;
   color: white;
   transition-duration: 0.5s;
 }
-main .servise-part button:hover{
+main .servise-part button:hover {
   opacity: 0.7;
 }
 /* servise part end */
