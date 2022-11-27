@@ -8,6 +8,10 @@ body {
   --primery-font: "Spinnaker", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 /* header part start */
 
 .logo {
@@ -122,7 +126,7 @@ main .banner .on-baner p {
 main .banner .on-baner button {
   width: 121px;
   height: 45px;
-  font-size: 15px;
+  font-size: 20px;
   border: 0px;
   border-radius: 25px;
   background-color: #36b2b0;
@@ -135,17 +139,19 @@ main .banner .on-baner button:hover {
 }
 /* baner part end */
 
-main h3 {
+main .servicestitle {
   text-align: center;
   color: #363c45;
   font-weight: bold;
-  margin: 70px;
+  margin: 120px;
+  font-size: 50px;
 }
 
 /* servise part start */
+
 main .servise-part {
   width: 80%;
-  margin: auto;
+  margin: 150px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -176,8 +182,8 @@ main .servise-part .servise-wrapper div p {
   color: #363c45;
 }
 main .servise-part button {
-  width: 121px;
-  height: 45px;
+  width: 150px;
+  height: 50px;
   font-size: 15px;
   border: 0px;
   border-radius: 25px;
@@ -196,9 +202,10 @@ main .about-wendy {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 800px;
+  height: 1000px;
   place-items: center;
   position: relative;
+  margin-bottom: 200px;
 }
 main .about-wendy img {
   width: 100%;
@@ -260,10 +267,12 @@ main .client-list .bottom {
 }
 main .client-list .bottom div {
   width: 20%;
+  height: 90%;
 }
 
 main .client-list .bottom div img {
   width: 100%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,3 +289,82 @@ main .client-list .bottom div:hover .overlay {
 }
 
 /* client list part end */
+
+/* reviews list part start */
+main .reviews {
+  display: grid;
+  place-items: center;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .reviews_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px 0px 10px 0px;
+}
+main .reviews aside {
+  place-items: center;
+  text-align: center;
+  width: 80%;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+main .reviews aside h1 {
+  font-size: 150px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 50px;
+}
+
+main .reviews aside p {
+  font-size: 18px;
+  line-height: 35px;
+}
+main .reviews aside h6 {
+  font-size: 22px;
+  margin-top: 50px;
+}
+/* reviews list part end */
+
+/* openinghours list part start */
+
+main .banner_openinghours {
+  background-image: url(/assets/images/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: 700px;
+  position: relative;
+}
+main .banner_openinghours .opening_contain {
+  background-color: #21313ad5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+main .banner_openinghours .opening_contain h1 {
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  margin: 200px auto 50px;
+  font-size: 60px;
+}
+main .banner_openinghours .opening_contain p {
+  color: white;
+  line-height: 45px;
+  width: fit-content;
+  margin: auto;
+  font-size: 28px;
+}
+/* openinghours list part end */
+
+/* about_contact list part start */
+main .about_contact {
+}
+/* about_contact list part end */

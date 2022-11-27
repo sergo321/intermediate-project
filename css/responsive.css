@@ -21,6 +21,9 @@
 }
 
 @media screen and (max-width: 991px) {
+  .hidden {
+    display: block;
+  }
   main .about-wendy {
     position: static;
     display: grid;
@@ -78,9 +81,42 @@
   .btn-contain {
     margin: 0 auto;
   }
+  main .client-list .bottom {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 10px;
+  }
+  main .client-list .bottom div {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    height: none;
+    border: solid 1px black;
+  }
+
+  main .reviews {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  main .reviews aside {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  main .banner_openinghours .opening_contain h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  main .client-list .bottom div {
+    height: 200px;
+  }
   main .servise-part {
     width: 90%;
   }
@@ -89,5 +125,23 @@
   }
   main .servise-part .servise-wrapper div img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  main .client-list .bottom div {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .client-list .bottom div {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  main .client-list .bottom div {
+    height: 100px;
   }
 }
