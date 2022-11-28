@@ -366,5 +366,97 @@ main .banner_openinghours .opening_contain p {
 
 /* about_contact list part start */
 main .about_contact {
+  margin: auto;
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+main .about_contact .about-left {
+  width: 40%;
+
+}
+main .about_contact .about-left h3 {
+  font-size: 40px;
+  color: #363c45;
+  font-weight: bold;
+}
+main .about_contact .about-left p{
+  font-size: 15px;
+  color: #363c45;
+
+}
+main .about_contact .about-right {
+  width: 40%;
+}
+main .about_contact .about-right  form {
+  width: 90%;
+  height: 250px;
+  display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+}
+main .about_contact .about-right  form input {
+  height: 40px;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+main .about_contact .about-right  form input:hover {
+  border: 1px solid black;
+}
+main .about_contact .about-right  form input::placeholder {
+  margin-left: 10%;
+  align-items: center;
+}
+main .about_contact .about-right  form .forgrid1{
+  grid-area: 1 / 1 / 2 / 2; 
+}
+main .about_contact .about-right  form .forgrid2{
+  grid-area: 1 / 2 / 2 / 3;
+}
+main .about_contact .about-right  form .forgrid3{
+   grid-area: 2 / 1 / 3 / 2; 
+}
+main .about_contact .about-right  form .forgrid4{
+  grid-area: 2 / 2 / 3 / 3;
+}
+main .about_contact .about-right  form .forgrid5{
+  grid-area: 3 / 1 / 4 / 3;
+}
+main .about_contact .about-right  form .forgrid6{
+  grid-area: 4 / 1 / 5 / 3; 
+  max-width: 460px;
+  min-width: 460px;
+  max-height: 126px;
+  min-height: 126px;
+}
+main .about_contact .about-right  form .forgrid7{
+  grid-area: 5 / 1 / 6 / 3;
+  border: 0px;
+  background-color: #363C45;
+  color: white;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+main .about_contact .about-right  form .forgrid7:hover{
+  opacity: 0.7;
+  transition-duration: 0.5s;
 }
 /* about_contact list part end */
+
+
+/*footer part start*/
+footer {
+  width: 100%;
+  height: 80px;
+  margin-top: 150px;
+  text-align: center;
+}
+footer .foricon a {
+  color: #363C45;
+
+}
+
+/*footer part end*/
