@@ -373,7 +373,7 @@ main .about_contact {
   justify-content: space-around;
 }
 main .about_contact .about-left {
-  width: 40%;
+  width: 30%;
 
 }
 main .about_contact .about-left h3 {
@@ -387,7 +387,7 @@ main .about_contact .about-left p{
 
 }
 main .about_contact .about-right {
-  width: 40%;
+  width: 30%;
 }
 main .about_contact .about-right  form {
   width: 90%;
@@ -396,7 +396,7 @@ main .about_contact .about-right  form {
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 10px;
-grid-row-gap: 5px;
+grid-row-gap: 15px;
 }
 main .about_contact .about-right  form input {
   height: 40px;
@@ -407,8 +407,12 @@ main .about_contact .about-right  form input:hover {
   border: 1px solid black;
 }
 main .about_contact .about-right  form input::placeholder {
-  margin-left: 10%;
-  align-items: center;
+  color: black;
+  font-size: 15px;
+}
+main .about_contact .about-right  form textarea::placeholder {
+  color: black;
+  font-size: 15px;
 }
 main .about_contact .about-right  form .forgrid1{
   grid-area: 1 / 1 / 2 / 2; 
