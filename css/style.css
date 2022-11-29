@@ -512,6 +512,24 @@ main .breed aside button {
 main .breed  .active-underline{
   border-bottom: 5px solid rgb(24, 154, 220);
 }
+
+
+/* for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part
+for hide and appair beep part  */
+
+main .hide {
+  display: none;
+}
+
+
 /* breed part end*/
 main .breed-description {
   width: 60%;
@@ -558,4 +576,13 @@ main .breed-description .breed-wrapper .breed-btn:hover {
   opacity: 0.7;
   transition-duration: 0.7s;
 }
+
+
+
+
+
+
+
+
+
 /*book online html end */
