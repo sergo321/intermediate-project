@@ -123,9 +123,9 @@ main .banner .on-baner p {
   width: 121px;
   height: 45px;
 }
-main .banner .on-baner button {
-  width: 121px;
-  height: 45px;
+main .banner .on-baner a {
+  text-decoration: none;
+ padding: 5px;
   font-size: 20px;
   border: 0px;
   border-radius: 25px;
@@ -133,7 +133,7 @@ main .banner .on-baner button {
   color: white;
   transition-duration: 0.5s;
 }
-main .banner .on-baner button:hover {
+main .banner .on-baner a:hover {
   background-color: #4f7271;
   transition-duration: 0.5s;
 }
@@ -181,9 +181,9 @@ main .servise-part .servise-wrapper div p {
   font-size: 18px;
   color: #363c45;
 }
-main .servise-part button {
-  width: 150px;
-  height: 50px;
+main .servise-part a {
+  text-decoration: none;
+  padding: 5px;
   font-size: 15px;
   border: 0px;
   border-radius: 25px;
@@ -191,7 +191,7 @@ main .servise-part button {
   color: white;
   transition-duration: 0.5s;
 }
-main .servise-part button:hover {
+main .servise-part a:hover {
   opacity: 0.7;
 }
 /* servise part end */
@@ -501,6 +501,7 @@ main .breed {
 }
 main .breed aside {
   width: 30%;
+  text-align: center;
 }
 main .breed aside button {
   border: 0px;
