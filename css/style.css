@@ -190,10 +190,6 @@ main .servise-part .servise-wrapper div p {
   color: #363c45;
 }
 
-main .servise-part a:hover {
-  opacity: 0.7;
-}
-
 main .servise-part .primery-btn {
   margin: 0 auto;
 }
@@ -208,6 +204,10 @@ main .servise-part .primery-btn button {
   transition-duration: 0.5s;
   width: 121px;
   height: 45px;
+  transition: 0.4s;
+}
+main .servise-part .primery-btn button:hover {
+  opacity: 0.7;
 }
 /* servise part end */
 
