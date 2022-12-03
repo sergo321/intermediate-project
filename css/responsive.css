@@ -96,10 +96,10 @@
     top: 40%;
     left: 0%;
   }
-
-  .btn-contain {
+  main .banner .on-baner .primery-btn {
     margin: 0 auto;
   }
+
   main .client-list .bottom {
     width: 95%;
     margin: auto;
