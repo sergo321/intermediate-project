@@ -120,12 +120,12 @@ main .banner .on-baner p {
   margin-bottom: 60px;
 }
 .btn-contain {
-  width: 121px;
-  height: 45px;
+  width: 140px;
+  height: 60px;
 }
 main .banner .on-baner a {
   text-decoration: none;
- padding: 5px;
+  padding: 15px;
   font-size: 20px;
   border: 0px;
   border-radius: 25px;
@@ -152,9 +152,8 @@ main .servicestitle {
 main .servise-part {
   width: 80%;
   margin: 150px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   row-gap: 50px;
 }
 main .servise-part .servise-wrapper {
@@ -183,8 +182,8 @@ main .servise-part .servise-wrapper div p {
 }
 main .servise-part a {
   text-decoration: none;
-  padding: 5px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 20px;
   border: 0px;
   border-radius: 25px;
   background-color: #36b2b0;
@@ -193,6 +192,10 @@ main .servise-part a {
 }
 main .servise-part a:hover {
   opacity: 0.7;
+}
+
+.servise-part-btn-contain {
+  margin: 0 auto;
 }
 /* servise part end */
 
@@ -205,7 +208,6 @@ main .about-wendy {
   height: 1000px;
   place-items: center;
   position: relative;
-  margin-bottom: 200px;
 }
 main .about-wendy img {
   width: 100%;
@@ -240,6 +242,8 @@ main .about-wendy aside p {
 /* client list part start */
 main .client-list {
   width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
 }
 main .client-list .top {
   width: 100%;
@@ -265,28 +269,46 @@ main .client-list .bottom {
   display: flex;
   justify-content: center;
 }
-main .client-list .bottom div {
+main .client-list .bottom .overlay_container {
   width: 20%;
   height: 90%;
+  transition: 0.4s;
+  position: relative;
 }
 
-main .client-list .bottom div img {
+main .client-list .bottom .overlay_container img {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-main .client-list .bottom div p {
-  font-size: 25px;
-  position: relative;
-  top: -50%;
-  opacity: 0;
+
+main .client-list .bottom .overlay_container p {
+  font-size: 20px;
   color: white;
+  margin: 30% auto;
+  width: 90%;
 }
-main .client-list .bottom div:hover .overlay {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 1s;
+  background-color: #21313ab4;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .client-list .bottom .overlay_container:hover .overlay {
   opacity: 1;
 }
+/* 
+
+main .client-list .bottom div:hover .overlay {
+  opacity: 1;
+  background-color: wheat;
+} */
 
 /* client list part end */
 
@@ -322,17 +344,19 @@ main .reviews aside h1 {
 main .reviews aside p {
   font-size: 18px;
   line-height: 35px;
+  font-family: var(--primery-font);
 }
 main .reviews aside h6 {
   font-size: 22px;
   margin-top: 50px;
+  font-family: var(--primery-font);
 }
 /* reviews list part end */
 
 /* openinghours list part start */
 
 main .banner_openinghours {
-  background-image: url(/assets/images/banner2.jpg);
+  background-image: url(https://i.postimg.cc/N0KmFMC7/banner2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,93 +398,135 @@ main .about_contact {
 }
 main .about_contact .about-left {
   width: 30%;
-
 }
 main .about_contact .about-left h3 {
   font-size: 40px;
   color: #363c45;
   font-weight: bold;
+  margin-bottom: 40px;
 }
-main .about_contact .about-left p{
-  font-size: 15px;
+main .about_contact .about-left p {
+  font-size: 16px;
   color: #363c45;
-
+  line-height: 35px;
+  font-family: var(--primery-font);
 }
 main .about_contact .about-right {
   width: 30%;
 }
-main .about_contact .about-right  form {
-  width: 90%;
+main .about_contact .about-right form {
+  width: 100%;
   height: 250px;
   display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
 }
-main .about_contact .about-right  form input {
+main .about_contact .about-right form input {
   height: 40px;
   border: 0px;
   border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.797);
+  font-family: var(--primery-font);
 }
-main .about_contact .about-right  form input:hover {
+main .about_contact .about-right form input:hover {
   border: 1px solid black;
 }
-main .about_contact .about-right  form input::placeholder {
-  color: black;
-  font-size: 15px;
+main .about_contact .about-right form input::placeholder {
+  color: rgba(0, 0, 0, 0.797);
+  font-size: 18px;
+  font-family: var(--primery-font);
 }
-main .about_contact .about-right  form textarea::placeholder {
-  color: black;
-  font-size: 15px;
+main .about_contact .about-right form textarea {
+  background-color: transparent;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.797);
+  outline: none;
 }
-main .about_contact .about-right  form .forgrid1{
-  grid-area: 1 / 1 / 2 / 2; 
+main .about_contact .about-right form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.579);
+  font-size: 18px;
+  font-family: var(--primery-font);
 }
-main .about_contact .about-right  form .forgrid2{
+main .about_contact .about-right form .forgrid1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+main .about_contact .about-right form .forgrid2 {
   grid-area: 1 / 2 / 2 / 3;
 }
-main .about_contact .about-right  form .forgrid3{
-   grid-area: 2 / 1 / 3 / 2; 
+main .about_contact .about-right form .forgrid3 {
+  grid-area: 2 / 1 / 3 / 2;
 }
-main .about_contact .about-right  form .forgrid4{
+main .about_contact .about-right form .forgrid4 {
   grid-area: 2 / 2 / 3 / 3;
 }
-main .about_contact .about-right  form .forgrid5{
+main .about_contact .about-right form .forgrid5 {
   grid-area: 3 / 1 / 4 / 3;
 }
-main .about_contact .about-right  form .forgrid6{
-  grid-area: 4 / 1 / 5 / 3; 
-  max-width: 460px;
-  min-width: 460px;
+main .about_contact .about-right form .forgrid6 {
+  grid-area: 4 / 1 / 5 / 3;
+  max-width: 100%;
+  min-width: 100%;
   max-height: 126px;
   min-height: 126px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid black;
 }
-main .about_contact .about-right  form .forgrid7{
+main .about_contact .about-right form .forgrid6:hover {
+  border: solid 1px black;
+}
+main .about_contact .about-right form .forgrid6::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.797);
+  font-family: var(--primery-font);
+}
+main .about_contact .about-right form .forgrid7 {
   grid-area: 5 / 1 / 6 / 3;
   border: 0px;
-  background-color: #363C45;
+  background-color: #363c45;
   color: white;
   font-size: 18px;
   transition-duration: 0.5s;
+  height: 40px;
 }
-main .about_contact .about-right  form .forgrid7:hover{
+main .about_contact .about-right form .forgrid7:hover {
   opacity: 0.7;
   transition-duration: 0.5s;
 }
 /* about_contact list part end */
 
-
 /*footer part start*/
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  height: 80px;
-  margin-top: 150px;
+  height: 180px;
+  margin-top: 230px;
   text-align: center;
+  background-color: white;
 }
 footer .foricon a {
-  color: #363C45;
-
+  color: #363c45;
+}
+footer .foricon a i {
+  font-size: 20px;
+  padding: 10px;
+}
+footer p {
+  font-size: 20px;
+  color: #36b2b0;
 }
 
 /*footer part end*/
@@ -506,13 +572,12 @@ main .breed aside {
 main .breed aside button {
   border: 0px;
   font-size: 16px;
-  color: #363C45;
+  color: #363c45;
 }
 
-main .breed  .active-underline{
+main .breed .active-underline {
   border-bottom: 5px solid rgb(24, 154, 220);
 }
-
 
 /* for hide and appair beep part
 for hide and appair beep part
@@ -529,14 +594,13 @@ main .hide {
   display: none;
 }
 
-
 /* breed part end*/
 main .breed-description {
   width: 60%;
   margin: auto;
 }
 
-main .breed-description .breed-wrapper{
+main .breed-description .breed-wrapper {
   margin-bottom: 50px;
   border-bottom: 1px solid #363c456c;
   width: 100%;
@@ -555,19 +619,19 @@ main .breed-description .breed-wrapper .small-desc a {
   font-weight: bold;
   font-size: 24px;
 }
-main .breed-description .breed-wrapper .small-desc p{
+main .breed-description .breed-wrapper .small-desc p {
   font-size: 16px;
-  color: #363C45;
+  color: #363c45;
 }
 
 main .breed-description .breed-wrapper .price p {
   font-size: 16px;
-  color: #363C45;
+  color: #363c45;
 }
 main .breed-description .breed-wrapper .breed-btn {
   width: 150px;
   height: 38px;
-  background-color: #36B2B0;
+  background-color: #36b2b0;
   color: white;
   border: 0px;
   transition-duration: 0.7s;
@@ -576,13 +640,5 @@ main .breed-description .breed-wrapper .breed-btn:hover {
   opacity: 0.7;
   transition-duration: 0.7s;
 }
-
-
-
-
-
-
-
-
 
 /*book online html end */
