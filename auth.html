@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wendys dog salon auth page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo-contain">
+            <img class="logo" src="./assets/images/logo.png" alt="logo" />
+            <a class="navbar-brand" href="./index.html">Wendy's Dog Salon</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="signUp" href="./auth.html?register"
+                      >Sign up</a
+                    >
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="singIn" href="./auth.html?auth"
+                      >Sign in</a
+                    >
+                  </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="form">
+        <aside class="top">
+          <aside class="left">
+            <span id="register" class="active-register">Sign up</span>
+          </aside>
+          <aside class="right">
+            <span id="login">Sign in</span>
+          </aside>
+        </aside>
+        <aside class="bottom">
+          <div class="actionToggle">
+            <label for="fullname" class="form-label">Fullname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullname"
+              placeholder="Input fullname"
+            />
+          </div>
+          <div>
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Input email"
+            />
+          </div>
+          <div>
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="changePasswordVisibility"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Input password"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-primary" id="registerbutton">register</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script
+      src="https://kit.fontawesome.com/af6bc85f41.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./sharefunctions.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./firebase.js"></script>
+  </body>
+</html>

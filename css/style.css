@@ -654,3 +654,32 @@ main .breed-description .breed-wrapper .breed-btn:hover {
 }
 
 /*book online html end */
+
+
+
+
+
+
+/* auth html part start */
+body main .form {
+  width: 50%;
+  margin: auto;
+  margin-top: 30vh;
+  user-select: none;
+}
+
+body main .form .top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+body main .form .top aside span {
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* auth html part end */
