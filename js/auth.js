@@ -57,6 +57,13 @@ login.addEventListener("click", () => {
 function toggle(action) {
   const isAction = action === 'register';
   actionToggleArray.forEach((element) => {
-    element.style.display = isAction ? 'block' : 'none';
+    if(element.style.display = isAction){
+     element.style.display= 'block'
+    }else(element.style.display='none')
   });
 }
+
+
+
+
+
