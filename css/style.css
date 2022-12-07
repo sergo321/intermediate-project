@@ -655,31 +655,74 @@ main .breed-description .breed-wrapper .breed-btn:hover {
 
 /*book online html end */
 
-
-
-
-
-
 /* auth html part start */
 body main .form {
-  width: 50%;
+  width: 400px;
   margin: auto;
   margin-top: 30vh;
   user-select: none;
+  border-radius: 9px;
+  background-color: white;
+  box-shadow: -2px -1px 39px 3px rgba(33, 134, 133, 0.75);
+}
+main .form .login-form-title {
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+main .form .login-form-title h1 {
+  font-family: var(--primery-font);
 }
 
 body main .form .top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 body main .form .top aside span {
   cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 9px;
+  background-color: #36b2b0;
+  color: white;
+  transition: 0.4s;
+  border: solid 2px transparent;
 }
 
+body main .form .top aside span:hover {
+  background-color: #218685;
+  border-left: 2px solid red;
+  border-top: 2px solid green;
+  border-right: 2px solid yellow;
+  border-bottom: 2px solid blue;
+}
 
+main .form .bottom {
+  padding-bottom: 30px;
+}
 
+main .form .bottom .inputs-box {
+  width: 90%;
+  margin: 0 auto;
+}
 
-
+main .form .bottom .inputs-box button {
+  width: 100%;
+  background-color: #36b2b0;
+  transition: 0.4s;
+  border: none;
+  border: solid 2px transparent;
+}
+main .form .bottom .inputs-box button:hover {
+  background-color: #218685;
+  border-left: 2px solid red;
+  border-top: 2px solid green;
+  border-right: 2px solid yellow;
+  border-bottom: 2px solid blue;
+}
 
 /* auth html part end */

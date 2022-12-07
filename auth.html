@@ -4,14 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wendys dog salon auth page</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
+      rel="shortcut icon"
+      href="https://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22214-dog-face-icon.png"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- font kik start-->
+    <script
+      src="https://kit.fontawesome.com/52c1aaaf41.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font kik end -->
+
+    <!-- css responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/1272a139a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <title>wendys dog salon auth page</title>
   </head>
 
   <body>
@@ -35,8 +58,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              
                 <li class="nav-item">
-                    <a class="nav-link" id="signUp" href="./auth.html?register"
+                    <a class="nav-link active" id="signUp" href="./auth.html?register"
                       >Sign up</a
                     >
                   </li>
@@ -53,7 +84,11 @@
     </header>
     <main>
       <section class="form">
+        <aside class="login-form-title">
+          <h1>Login Form</h1>
+        </aside>
         <aside class="top">
+          
           <aside class="left">
             <span id="register" class="active-register">Sign up</span>
           </aside>
@@ -62,25 +97,25 @@
           </aside>
         </aside>
         <aside class="bottom">
-          <div class="actionToggle" id="sing-in-desapiar">
-            <label for="fullname" class="form-label">Fullname</label>
+          <div class="actionToggle inputs-box" id="sing-in-desapiar">
+            <label for="fullname" class="form-label">Full Name</label>
             <input
               type="text"
               class="form-control"
               id="fullname"
-              placeholder="Input fullname"
+              placeholder="Full Name"
             />
           </div>
-          <div>
+          <div class="inputs-box">
             <label for="email" class="form-label">Email</label>
             <input
               type="text"
               class="form-control"
               id="email"
-              placeholder="Input email"
+              placeholder="Email Address"
             />
           </div>
-          <div>
+          <div class="inputs-box">
             <label for="password" class="form-label">Password</label>
             <div class="input-group mb-3">
               <span class="input-group-text" id="changePasswordVisibility"
@@ -90,13 +125,14 @@
                 type="password"
                 id="password"
                 class="form-control"
-                placeholder="Input password"
+                placeholder="Password"
               />
             </div>
           </div>
-          <div>
-            <button class="btn btn-primary" id="registerbutton">register</button>
+          <div class="inputs-box">
+            <button class="btn btn-primary" id="registerbutton">Register</button>
           </div>
+          
         </aside>
       </section>
     </main>
