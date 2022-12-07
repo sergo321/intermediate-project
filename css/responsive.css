@@ -40,6 +40,22 @@
     min-height: 126px;
   }
 }
+
+@media screen and (max-width: 1033px) {
+  main .breed {
+    display: none;
+  }
+  main .dropdown-responsive {
+    display: flex;
+  }
+  main .book-online-banner {
+    height: 400px;
+  }
+  main .book-online-banner .book-online-contain h1 {
+    font-size: 30px;
+    margin: 230px auto 50px;
+  }
+}
 @media screen and (max-width: 991px) {
   .hidden {
     display: block;
@@ -130,6 +146,46 @@
     font-size: 40px;
   }
 }
+@media screen and (max-width: 958px) {
+  main .breed-description .breed-wrapper {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 1px #363c456c;
+  }
+  main .breed-description .breed-wrapper img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 1px;
+    margin: 0 auto;
+  }
+  main .breed-description {
+    width: 90%;
+    margin: auto;
+  }
+  main .breed-description .breed-wrapper .small-desc {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    width: 90%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.571);
+  }
+  main .breed-description .breed-wrapper .price {
+    font-size: 16px;
+    color: #363c45;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .breed-description .breed-wrapper .breed-btn {
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 768px) {
   main .banner .on-baner h2 {
@@ -175,6 +231,12 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .dropbtn {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   main .client-list .bottom .overlay_container {
     height: 120px;
@@ -187,12 +249,21 @@
     font-size: 13px;
   }
 }
+@media screen and (max-width: 360px) {
+  .dropbtn {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 330px) {
   main .about-wandy-right {
     height: 600px;
   }
 }
-
+@media screen and (max-width: 310px) {
+  .dropbtn {
+    width: 270px;
+  }
+}
 @media screen and (max-width: 328px) {
   main .client-list .bottom .overlay_container {
     height: 100px;
@@ -217,5 +288,10 @@
 @media screen and (max-width: 289px) {
   main .about-wandy-right {
     height: 700px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .dropbtn {
+    width: 240px;
   }
 }
