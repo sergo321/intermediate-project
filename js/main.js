@@ -7,6 +7,8 @@ let breedsection3 = document.querySelector(".forjshide3");
 let dropDownTop = document.querySelector(".btn-top");
 let dropDownMiddle = document.querySelector(".btn-middle");
 let dropDownBottom = document.querySelector(".btn-bottom");
+let dropbtn = document.querySelector(".dropbtn");
+let mydropdown = document.querySelector("#myDropdown");
 function addclassbreed() {
   breedleft.addEventListener("click", () => {
     breedleft.classList.add("active-underline");
@@ -47,6 +49,8 @@ function drowDown() {
     breedsection1.classList.remove("hide");
     breedsection2.classList.add("hide");
     breedsection3.classList.add("hide");
+    dropbtn.innerHTML="Small Breeds"
+    mydropdown.classList.remove("show")
   });
   dropDownMiddle.addEventListener("click", () => {
     breedleft.classList.remove("active-underline");
@@ -56,6 +60,8 @@ function drowDown() {
     breedsection1.classList.add("hide");
     breedsection2.classList.remove("hide");
     breedsection3.classList.add("hide");
+    dropbtn.innerHTML="Medium Breeds"
+    mydropdown.classList.remove("show")
   });
   dropDownBottom.addEventListener("click", () => {
     breedleft.classList.remove("active-underline");
@@ -65,5 +71,7 @@ function drowDown() {
     breedsection1.classList.add("hide");
     breedsection2.classList.add("hide");
     breedsection3.classList.remove("hide");
+    dropbtn.innerHTML="Large Breeds"
+    mydropdown.classList.remove("show")
   });
 }
