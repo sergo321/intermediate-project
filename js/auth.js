@@ -120,6 +120,7 @@ function actionLogin() {
       const id = usersArrayUpdated[userIndex].id;
       sessionStorage.setItem("user_id", id);
       location.href = "autorized.html";
+      // new element
       
     }
   }, 1000);
