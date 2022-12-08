@@ -119,7 +119,8 @@ function actionLogin() {
       displayToast("Successfully authorized", "success", "green");
       const id = usersArrayUpdated[userIndex].id;
       sessionStorage.setItem("user_id", id);
-      location.href = "index.html";
+      location.href = "autorized.html";
+      
     }
   }, 1000);
 }

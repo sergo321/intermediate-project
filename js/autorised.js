@@ -1,0 +1,1 @@
+const nameuser=document.querySelector("#nameuser");
