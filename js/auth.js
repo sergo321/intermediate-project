@@ -45,7 +45,8 @@ function toggle(action) {
   actionToggleArray.forEach((element) => {
     if ((element.style.display = isAction)) {
       element.style.display = "block";
-    } else element.style.display = "none";
+      
+    } else element.style.display = "none",singIn.style.color="black",signUp.style.color="grey";
   });
 }
 registerbutton.addEventListener("click", () => {
