@@ -100,7 +100,7 @@ main {
 
 /* baner part srart */
 .banner {
-  background-image: url(/assets/images/banner.jpg);
+  background-image: url(../assets/images/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -368,7 +368,7 @@ main .reviews aside h6 {
 /* openinghours list part start */
 
 main .banner_openinghours {
-  background-image: url(/assets/images/banner2.jpg);
+  background-image: url(../assets/images/banner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
