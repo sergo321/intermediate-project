@@ -798,3 +798,12 @@ main .dropdown-responsive {
   display: block;
 }
 /* Drop Down Menu End */
+
+
+
+
+/* autorized page css */
+
+.collapse .navbar-nav .cos #logout{
+  cursor: pointer;
+}
