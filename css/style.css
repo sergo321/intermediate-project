@@ -804,6 +804,6 @@ main .dropdown-responsive {
 
 /* autorized page css */
 
-.collapse .navbar-nav .cos #logout{
+#logout{
   cursor: pointer;
 }
