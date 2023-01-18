@@ -9,6 +9,11 @@ let dropDownMiddle = document.querySelector(".btn-middle");
 let dropDownBottom = document.querySelector(".btn-bottom");
 let dropbtn = document.querySelector(".dropbtn");
 let mydropdown = document.querySelector("#myDropdown");
+let burger_button = document.querySelector(".navbar-toggler");
+let burger_menu = document.querySelector(".navbar-collapse");
+burger_button.addEventListener("click", () => {
+  burger_menu.classList.toggle("hidden");
+});
 function addclassbreed() {
   breedleft.addEventListener("click", () => {
     breedleft.classList.add("active-underline");
@@ -49,9 +54,8 @@ function drowDown() {
     breedsection1.classList.remove("hide");
     breedsection2.classList.add("hide");
     breedsection3.classList.add("hide");
-    dropbtn.innerHTML=`Small Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`
+    dropbtn.innerHTML = `Small Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`;
     mydropdown.classList.remove("show");
-    
   });
   dropDownMiddle.addEventListener("click", () => {
     breedleft.classList.remove("active-underline");
@@ -61,8 +65,8 @@ function drowDown() {
     breedsection1.classList.add("hide");
     breedsection2.classList.remove("hide");
     breedsection3.classList.add("hide");
-    dropbtn.innerHTML=`Medium Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`
-    mydropdown.classList.remove("show")
+    dropbtn.innerHTML = `Medium Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`;
+    mydropdown.classList.remove("show");
   });
   dropDownBottom.addEventListener("click", () => {
     breedleft.classList.remove("active-underline");
@@ -72,7 +76,7 @@ function drowDown() {
     breedsection1.classList.add("hide");
     breedsection2.classList.add("hide");
     breedsection3.classList.remove("hide");
-    dropbtn.innerHTML=`Large Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`
-    mydropdown.classList.remove("show")
+    dropbtn.innerHTML = `Large Breeds <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>`;
+    mydropdown.classList.remove("show");
   });
 }
