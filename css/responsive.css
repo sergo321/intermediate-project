@@ -5,6 +5,30 @@
   main .banner .on-baner h2 {
     font-size: 55px;
   }
+  main .servicestitle {
+    text-align: center;
+    color: #363c45;
+    font-weight: bold;
+    margin: 45px;
+    font-size: 50px;
+  }
+  main .servise-part {
+    width: 80%;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  main .client-list .top {
+    height: 210px;
+    padding: 61px;
+  }
+  main .reviews aside h1 {
+    font-size: 150px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -228,6 +252,10 @@
     width: 100%;
     height: 430px;
   }
+  main .reviews aside h1 {
+    font-size: 100px;
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -236,8 +264,6 @@
   }
   main .servicestitle {
     font-size: 30px;
-    width: 100%;
-    margin: 100px auto;
   }
   main .breed-description .breed-wrapper {
     width: 90%;
@@ -245,6 +271,9 @@
   main .breed-description .breed-wrapper img {
     width: 100%;
     height: 350px;
+  }
+  main .client-list .top h4 {
+    font-size: 30px;
   }
 }
 
@@ -277,6 +306,9 @@
   .dropbtn {
     width: 300px;
   }
+  main .client-list .top h4 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 330px) {
   main .about-wandy-right {
@@ -291,6 +323,19 @@
 @media screen and (max-width: 310px) {
   .dropbtn {
     width: 270px;
+  }
+  main .banner_openinghours .opening_contain h1 {
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    margin: 200px auto 50px;
+    font-size: 30px;
+  }
+  main .banner_openinghours .opening_contain p {
+    font-size: 20px;
+  }
+  main .about_contact .about-left h3 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 328px) {
