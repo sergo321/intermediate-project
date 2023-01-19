@@ -9,7 +9,7 @@ let dropDownMiddle = document.querySelector(".btn-middle");
 let dropDownBottom = document.querySelector(".btn-bottom");
 let dropbtn = document.querySelector(".dropbtn");
 let mydropdown = document.querySelector("#myDropdown");
-let burger_button = document.querySelector(".navbar-toggler");
+let burger_button = document.querySelector(".btn_toggler");
 let burger_menu = document.querySelector(".navbar-collapse");
 burger_button.addEventListener("click", () => {
   burger_menu.classList.toggle("hidden");
