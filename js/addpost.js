@@ -4,7 +4,9 @@ const letter=document.querySelector("#letter");
 const makepost=document.querySelector("#makepost")
 
 
-
+if (remainder.value=="" || letter.value==""){
+  alert("input all value")
+}else{
 makepost.addEventListener("click", ()=>{
    let remaindername=remainder.value;
    let remainderletter=letter.value;
@@ -17,7 +19,7 @@ makepost.addEventListener("click", ()=>{
   remainder.value="";
   letter.value="";
 })
-
+}
 function delateletter(){
         const postwrapper=document.querySelector("#postwrapper").remove();  
 }
