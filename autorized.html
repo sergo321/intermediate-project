@@ -88,6 +88,7 @@
       </section>
       <section class="about_contact">
         <aside class="about-right">
+          <p>Leave us your contact information</p>
           <form action="" id="register-form">
             <input class="forgrid1" type="text" placeholder="Name" id="name" />
             <input class="forgrid2" type="email" placeholder="Mail" id="mail" />
@@ -115,51 +116,60 @@
           </form>
         </aside>
       </section>
-      <!-- <section class="display-wrapper">
-        <div class="sidplay-items">
-          <input type="text" name="" id="named" placeholder="input dog name" />
-          <input type="number" id="age" placeholder="dog age" />
-          <input type="file" placeholder="upload dog image" />
+
+      <section class="addpost">
+        <div class="postcreate">
+          <input id="remainder" type="text" placeholder="remainder" />
+          <textarea
+            name="letter"
+            id="letter"
+            cols="30"
+            rows="10"
+            placeholder="make letter"
+          ></textarea>
+          <button id="makepost">add remainder</button>
         </div>
-        <div id="displayarea">
-          <!-- <p><span></span><span></span></p>
-        <p><span></span><span></span></p>
-        <p></p>
-        <p></p>
-        <button id="delated">delete</button>
-         -->
+        <div id="display">
+          <!-- <div id="postwrapper">
+            <p class="remaindername"></p>
+            <p class="remainderletter"></p>
+         
+        <button id="deleteletter" onclick="delateletter()"></button>
+       </div> -->
         </div>
-      </section> -->
+      </section>
       <!-- Messenger საუბრის დანამატი Code -->
-    <div id="fb-root"></div>
+      <div id="fb-root"></div>
 
-    <!-- Your საუბრის დანამატი code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+      <!-- Your საუბრის დანამატი code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "110775605255729");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+      <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "110775605255729");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v15.0",
+          });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
     </main>
     <footer>
       <div class="foricon">
