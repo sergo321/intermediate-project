@@ -4,10 +4,12 @@ const letter=document.querySelector("#letter");
 const makepost=document.querySelector("#makepost")
 
 
-if (remainder.value=="" || letter.value==""){
-  alert("input all value")
-}else{
+
+
 makepost.addEventListener("click", ()=>{
+  if (remainder.value=="" || letter.value==""){
+    alert("input all value")
+  }else{
    let remaindername=remainder.value;
    let remainderletter=letter.value;
     display.innerHTML=display.innerHTML+`<div id="postwrapper">
@@ -18,8 +20,9 @@ makepost.addEventListener("click", ()=>{
   </div>`
   remainder.value="";
   letter.value="";
-})
 }
+})
+
 function delateletter(){
         const postwrapper=document.querySelector("#postwrapper").remove();  
 }
