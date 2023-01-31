@@ -6,7 +6,8 @@ let count = 0;
 
 makepost.addEventListener("click", () => {
   if (remainder.value == "" || letter.value == "") {
-    alert("input all value");
+    // alert("input all value");
+    Swal.fire("Please fill in all required fields");
   } else {
     displayMenuResult(remainder.value, letter.value, count);
   }
