@@ -42,27 +42,6 @@
   header nav div div ul li a {
     font-size: 15px !important;
   }
-  main .about_contact {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  main .about_contact .about-left {
-    width: 100%;
-  }
-  main .about_contact .about-right {
-    width: 100%;
-  }
-  main .about_contact .about-right form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  main .about_contact .about-right form .forgrid6 {
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 126px;
-    min-height: 126px;
-  }
 }
 
 @media screen and (max-width: 1033px) {
@@ -169,6 +148,39 @@
   main .banner_openinghours .opening_contain h1 {
     font-size: 40px;
   }
+  main .about_contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main .about_contact .about-right {
+    width: 90%;
+  }
+  main .about_contact .about-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .about_contact .about-right form .forgrid6 {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 126px;
+    min-height: 126px;
+  }
+
+  .addpost {
+    width: 100%;
+    margin: 250px auto;
+  }
+  .postcreate {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #display {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: -170px;
+  }
 }
 @media screen and (max-width: 958px) {
   main .breed-description .breed-wrapper {
@@ -258,6 +270,21 @@
   }
 }
 
+@media screen and (max-width: 617px) {
+  #display {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .card {
+    width: 30rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 440px;
+    margin-top: 5px;
+  }
+}
+
 @media screen and (max-width: 548px) {
   main .client-list .bottom .overlay_container {
     height: 150px;
@@ -275,6 +302,23 @@
   main .client-list .top h4 {
     font-size: 30px;
   }
+  .card {
+    width: 27rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 400px;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .card {
+    width: 25rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 370px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -287,6 +331,13 @@
   main .breed-description .breed-wrapper img {
     width: 100%;
     height: 320px;
+  }
+  .card {
+    width: 23rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 335px;
   }
 }
 
@@ -301,13 +352,28 @@
   header nav .container-fluid a {
     font-size: 13px;
   }
+  .card {
+    width: 21rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 300px;
+  }
 }
+
 @media screen and (max-width: 360px) {
   .dropbtn {
     width: 300px;
   }
   main .client-list .top h4 {
     font-size: 25px;
+  }
+  .card {
+    width: 19rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 270px;
   }
 }
 @media screen and (max-width: 330px) {
@@ -318,6 +384,13 @@
   main .breed-description .breed-wrapper img {
     width: 100%;
     height: 300px;
+  }
+  .card {
+    width: 17rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 240px;
   }
 }
 @media screen and (max-width: 310px) {
@@ -377,5 +450,12 @@
 @media screen and (max-width: 280px) {
   .dropbtn {
     width: 240px;
+  }
+  .card {
+    width: 15rem !important;
+    margin: 0 auto;
+  }
+  .deleteletter {
+    margin-left: 210px;
   }
 }
