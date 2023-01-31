@@ -402,43 +402,36 @@ main .banner_openinghours .opening_contain p {
 
 /* about_contact list part start */
 main .about_contact {
-  margin: auto;
-  margin-top: 50px;
-  width: 90%;
+  margin: 50px auto;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
-main .about_contact .about-left {
-  width: 30%;
+
+main .about_contact .about-right {
+  width: 50%;
+  margin: 0 auto;
 }
-main .about_contact .about-left h3 {
-  font-size: 40px;
-  color: #363c45;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-main .about_contact .about-left p {
+
+main .about_contact .about-right p {
   font-size: 16px;
   color: #363c45;
   line-height: 35px;
   font-family: var(--primery-font);
 }
-main .about_contact .about-right {
-  width: 30%;
-}
+
 main .about_contact .about-right form {
   width: 100%;
   height: 250px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
 main .about_contact .about-right form input {
   height: 40px;
   border: 0px;
-  border-bottom: 1px solid black;
+  box-shadow: 1px 0px 5px 2px black;
+  border-radius: 7px;
   background-color: transparent;
   outline: none;
   padding: 10px;
@@ -446,9 +439,10 @@ main .about_contact .about-right form input {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.797);
   font-family: var(--primery-font);
+  transition: 0.4s;
 }
 main .about_contact .about-right form input:hover {
-  border: 1px solid black;
+  box-shadow: 1px 0px 8px 5px black;
 }
 main .about_contact .about-right form input::placeholder {
   color: rgba(0, 0, 0, 0.797);
@@ -460,6 +454,7 @@ main .about_contact .about-right form textarea {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.797);
   outline: none;
+  transition: 0.4s;
 }
 main .about_contact .about-right form textarea::placeholder {
   color: rgba(0, 0, 0, 0.579);
@@ -491,10 +486,12 @@ main .about_contact .about-right form .forgrid6 {
   padding: 10px;
   font-size: 18px;
   border: none;
-  border-bottom: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 1px 0px 5px 2px black;
+  transition: 0.4s;
 }
 main .about_contact .about-right form .forgrid6:hover {
-  border: solid 1px black;
+  box-shadow: 1px 0px 8px 5px black;
 }
 main .about_contact .about-right form .forgrid6::placeholder {
   font-size: 18px;
@@ -799,13 +796,129 @@ main .dropdown-responsive {
 }
 /* Drop Down Menu End */
 
-
-
-
 /* autorized page css */
 
-#logout{
+#logout {
   cursor: pointer;
 }
 
+/* add posts start */
 
+.addpost {
+  width: 100%;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.postcreate {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+.postcreate h3 {
+  text-align: center;
+  font-size: 26px;
+}
+.postcreate input {
+  width: 600px;
+}
+
+.postcreate input {
+  height: 40px;
+  border: 0px;
+  box-shadow: 1px 0px 8px 2px black;
+  border-radius: 7px;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.797);
+  font-family: var(--primery-font);
+  transition: 0.4s;
+  width: 100%;
+}
+.postcreate input:hover {
+  box-shadow: 1px 0px 8px 5px black;
+}
+
+.postcreate textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 126px;
+  min-height: 126px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 1px 0px 5px 2px black;
+  transition: 0.4s;
+  background-color: transparent;
+  outline: none;
+}
+.postcreate textarea:hover {
+  box-shadow: 1px 0px 8px 5px black;
+}
+.postcreate button {
+  height: 40px;
+  background-color: #363c45;
+  color: white;
+  font-size: 18px;
+  border: none;
+  transition: 0.4s;
+}
+.postcreate button:hover {
+  background-color: #636971;
+}
+
+.deleteletter {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 252px;
+  margin-top: 5px;
+}
+.fa-xmark {
+  background-color: white;
+  color: red;
+  font-size: 25px;
+}
+
+.deleteletter:hover {
+  box-shadow: 1px 0px 5px 2px rgb(145, 4, 4);
+}
+
+.table thead {
+}
+/* add post end */
+.deletebtn {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  margin-left: 20px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.display-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
