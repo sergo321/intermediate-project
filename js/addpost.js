@@ -1,28 +1,42 @@
-const display=document.querySelector("#display");
-const remainder=document.querySelector("#remainder");
-const letter=document.querySelector("#letter");
-const makepost=document.querySelector("#makepost")
+const display = document.querySelector("#display");
+const remainder = document.querySelector("#remainder");
+const letter = document.querySelector("#letter");
+const makepost = document.querySelector("#makepost");
+let count = 0;
 
+makepost.addEventListener("click", () => {
+  if (remainder.value == "" || letter.value == "") {
+    alert("input all value");
+  } else {
+    displayMenuResult(remainder.value, letter.value, count);
+  }
+  remainder.value = "";
+  letter.value = "";
+  count++;
+});
 
+function displayMenuResult(remainder, letter, id) {
+  if (validateData(remainder, letter)) {
+    display.innerHTML += `
+ 
 
+<div class="card" id="${id}" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${remainder}</h5>
+    <p class="card-text">${letter}</p>
+    <button class="deleteletter" onclick="delateletter('${id}')"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+</div>
 
-makepost.addEventListener("click", ()=>{
-  if (remainder.value=="" || letter.value==""){
-    alert("input all value")
-  }else{
-   let remaindername=remainder.value;
-   let remainderletter=letter.value;
-    display.innerHTML=display.innerHTML+`<div id="postwrapper">
-    <p class="remaindername">${remaindername}</p>
-    <p class="remainderletter">${remainderletter}</p>
-  
-  <button id="deleteletter" onclick="delateletter()">delate</button>
-  </div>`
-  remainder.value="";
-  letter.value="";
+  `;
+  }
 }
-})
 
-function delateletter(){
-        const postwrapper=document.querySelector("#postwrapper").remove();  
+function validateData(remainder, letter) {
+  if (remainder == "" || letter == "") return false;
+  else return true;
+}
+
+function delateletter(id) {
+  document.getElementById(id).remove();
 }
