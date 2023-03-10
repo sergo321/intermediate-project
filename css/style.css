@@ -420,14 +420,14 @@ main .about_contact .about-right p {
   font-family: var(--primery-font);
 }
 
-main .about_contact .about-right form {
+main .about_contact .about-right div {
   width: 100%;
   height: 250px;
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
-main .about_contact .about-right form input {
+main .about_contact .about-right div input {
   height: 40px;
   border: 0px;
   box-shadow: 1px 0px 5px 2px black;
@@ -441,42 +441,42 @@ main .about_contact .about-right form input {
   font-family: var(--primery-font);
   transition: 0.4s;
 }
-main .about_contact .about-right form input:hover {
+main .about_contact .about-right div input:hover {
   box-shadow: 1px 0px 8px 5px black;
 }
-main .about_contact .about-right form input::placeholder {
+main .about_contact .about-right div input::placeholder {
   color: rgba(0, 0, 0, 0.797);
   font-size: 18px;
   font-family: var(--primery-font);
 }
-main .about_contact .about-right form textarea {
+main .about_contact .about-right div textarea {
   background-color: transparent;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.797);
   outline: none;
   transition: 0.4s;
 }
-main .about_contact .about-right form textarea::placeholder {
+main .about_contact .about-right div textarea::placeholder {
   color: rgba(0, 0, 0, 0.579);
   font-size: 18px;
   font-family: var(--primery-font);
 }
-main .about_contact .about-right form .forgrid1 {
+main .about_contact .about-right div .forgrid1 {
   grid-area: 1 / 1 / 2 / 2;
 }
-main .about_contact .about-right form .forgrid2 {
+main .about_contact .about-right div .forgrid2 {
   grid-area: 1 / 2 / 2 / 3;
 }
-main .about_contact .about-right form .forgrid3 {
+main .about_contact .about-right div .forgrid3 {
   grid-area: 2 / 1 / 3 / 2;
 }
-main .about_contact .about-right form .forgrid4 {
+main .about_contact .about-right div .forgrid4 {
   grid-area: 2 / 2 / 3 / 3;
 }
-main .about_contact .about-right form .forgrid5 {
+main .about_contact .about-right div .forgrid5 {
   grid-area: 3 / 1 / 4 / 3;
 }
-main .about_contact .about-right form .forgrid6 {
+main .about_contact .about-right div .forgrid6 {
   grid-area: 4 / 1 / 5 / 3;
   max-width: 100%;
   min-width: 100%;
@@ -490,16 +490,16 @@ main .about_contact .about-right form .forgrid6 {
   box-shadow: 1px 0px 5px 2px black;
   transition: 0.4s;
 }
-main .about_contact .about-right form .forgrid6:hover {
+main .about_contact .about-right div .forgrid6:hover {
   box-shadow: 1px 0px 8px 5px black;
 }
-main .about_contact .about-right form .forgrid6::placeholder {
+main .about_contact .about-right div .forgrid6::placeholder {
   font-size: 18px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.797);
   font-family: var(--primery-font);
 }
-main .about_contact .about-right form .forgrid7 {
+main .about_contact .about-right div .forgrid7 {
   grid-area: 5 / 1 / 6 / 3;
   border: 0px;
   background-color: #363c45;
@@ -508,7 +508,7 @@ main .about_contact .about-right form .forgrid7 {
   transition-duration: 0.5s;
   height: 40px;
 }
-main .about_contact .about-right form .forgrid7:hover {
+main .about_contact .about-right div .forgrid7:hover {
   opacity: 0.7;
   transition-duration: 0.5s;
 }
